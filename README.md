@@ -9,3 +9,7 @@
 ## Utilisation
 
 + Pour adapter le jeu à votre convenance, éditez les listes de mots dans le fichier `data/mots.js`.
+
+## Démonstration de la version française
+
+https://pcardona34.github.io/jeu_du_pendu/
