@@ -4,7 +4,7 @@
 // N'oubliez pas les guillemets.
 
 var wordLists = { 
-  "1" : ["hippopotame","girafe", "gnou"],
-  "2": ["biere", "vin", "eau"],
-  "3": ["tarte", "clafoutis", "fondant"]
+  "1" : ["contrenas","indice"],
+  "2": ["circulaire"],
+  "3": ["errer"]
 };

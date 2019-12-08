@@ -1,78 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="fr">
 
-<html>
+<!--
+ * Jeu du pendu : index.html
+ *
+ * ( c ) 2019 Patrick Cardona
+ * Jeu du pendu
+ * Menu des exemples
+ *
+-->
+	
 	<head>
-		<title>Pendu</title>
-		<script src="js/jquery-1.10.2.js"></script>
-		<script src="js/custom.modernizr.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="data/mots.js"></script>
-		<script src="js/scripts.js"></script>
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<meta charset="utf-8">
+		<title>Index des séries de mots</title>
+		
+		<!-- CSS -->
+		<link href="css/chargement.css" rel="stylesheet" type="text/css" />
+		<link href="css/degrade.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+
 	</head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-1">
-          <h1>Pendu <span class="muted sub-title">cr&eacute;&eacute; par <a href="../index.html" target="_blank">Dustin Brown</a> et <a href="http://stevenferguson.site44.com" target="_blank">Steven Ferguson</a></span></h1>
-		<p>Traduction : Patrick Cardona</p>
-        </div>
-      </div>
-    </div>  
+	
+	<body>
+	
+	<!-- Corps de l'appli -->
+	<div id="conteneur"><p class="chargement">Veuillez patienter...</p></div>
+	
+	<template id="modele">
+			
+	<header>
+		<div>
+			<h1 id="titre_principal">Index des séries de mots</h1>
+		</div>
+	</header>
+	
+	<div id="accordeons">
+    		
+    	<!--
+    	<h3 id="titre_5e">Séries en cinquième</h3>
+    	<div id="zone_5e" class="degrade">
+		
+			<ul>
+				
+			</ul>
+		
+ 		</div>
+ 		-->
+ 		
+ 		<h3 id="titre_3e">Séries en troisième</h3>
+    	<div id="zone_3e" class="degrade">
+		
+			<ul>
+				<li><a href="pendu33.html">Pendu : lexique de la dictée 33</a></li>
+			</ul>
+		
+ 		</div>
+      		
+	</div>
+	
+	
+    
+      <footer>
+		
+			Séries proposées par Patrick Cardona
+		
+	</footer>
 
-    <hr>
+	</template>
 
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-5 col-md-5 col-md-offset-1">
-          <div class="row">
-            <div id="hangman-sprite" class="hangman-sprite0"></div>
-          </div>
-        </div>
-
-        <div class="col-sm-5 col-md-5 play-area initially-hidden">
-          <div class="row">
-            <div id="unguessed-letters"></div>
-          </div>
-          <div class="row">
-            <div id="word-container" class="initially-hidden">
-              <p class="letter"></p>
-            </div>
-          </div>
-          <div class="row">
-            <div id="incorrect-guesses">
-              <h3 class="light-weight">Lettres erron&eacute;es&nbsp;: </h3>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn btn-lg btn-success" id="play-again">Rejouer ?</button>
-          </div>
-        </div>
-
-        <div class="col-md-6 game-setup">
-
-          <div class="btn-group" id="choose-category">
-            <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">
-              Choisir un niveau<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-
-
-<!-- ADAPTEZ ICI LES ETIQUETTES DES CATEGORIES OU NIVEAUX -->
-              <li id="1">un</li>
-              <li id="2">deux</li>
-              <li id="3">trois</li>
-<!-- FIN DE L'ADAPTATION -->
-
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-	</body>
+     <script src="js/accordeons.js"></script>
+     <script src="js/index.js"></script>
+     </body>
 </html>
